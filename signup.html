@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>signup</title>
+	<LINK REL="STYLESHEET" TYPE="text/css" HREF="signup.css"/>
+	<style type="text/css">
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  margin-left:-52px;
+  bottom: 30px;
+  font-size: 17px;
+  
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+</head>
+<body>
+	<div class="signin">
+		<form>
+		<h2 style="color:#fff;">Sign Up</h2>
+		<input type="text" name="username" placeholder="First name"><br><br>
+		<input type="text" name="username" placeholder="Last name"><br><br>
+		<input type="password" name="pass" placeholder="Password"><br><br>
+		<input type="password" name="pass" placeholder="Confirm Password"><br><br>
+		<input type="text" name="email" placeholder="Email address"><br><br>
+		<input type="button" value="Sign Up" onclick="myFunction();"><br><br>
+		<div id="snackbar">Congratulations you have been signed up!!</div>
+		<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+         <font color="white">Already have an account?</font><a href="login.html">&nbsp;&nbsp;Log In</a>
+	    </form>
+	</div> 
+</body>
+</html>

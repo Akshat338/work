@@ -1,0 +1,297 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-size: 15px;
+}
+
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chilanka', cursive;
+    
+}
+
+/* this was for overall page*/
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.container .section img{
+    display: inline;
+    position: absolute;
+    top: 9px;
+    right: 100px;
+}
+
+.container .section:nth-child(1)
+{
+    position: sticky;
+    right:0;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(jefferson-santos-fCEJGBzAkrU-unsplash.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
+.container .section:nth-child(2)
+{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(dark-rider-JmVaNyemtN8-unsplash.jpg);
+    background-size: cover;
+    height: 790px;
+}
+
+
+.container .section:nth-child(3)
+{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(kelly-sikkema-HwU5H9Y6aL8-unsplash.jpg);
+    height: 800px;
+    background-size: cover;
+}
+
+
+.container .section:nth-child(4)
+{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(marcus-neto-gioH4gHo0-g-unsplash.jpg);
+    height: 800px;
+    background-size: cover;
+}
+
+/* this was for background images*/
+
+
+.navbar ul{
+    
+    display:flex;
+    flex-direction: row;
+}
+
+.navbar ul li{
+    
+    margin-top: 10px;
+    transition: 0.5s;
+    margin: 10px;
+    list-style: none;
+    padding: 20px;
+    /*border-right: 2px solid red;*/
+}
+
+.navbar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.navbar ul:hover li {
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(2px);
+}
+
+.navbar ul li:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    filter: blur(0);
+    transform-origin: left;
+    transition-delay: 0.1s;
+    background-color: #6f1414;
+    
+}
+
+.navbar ul li a:hover
+{
+    transform-origin: right;
+    transition: 0.5s;
+    background-color: #6f1414;
+    
+}
+
+.navbar form a{
+    color: yellow;
+    text-decoration: blink;
+}
+
+.navbar form a:hover{
+    color: skyblue;
+    
+}
+
+/* this is the navbar*/
+
+.security{
+    
+    background: rgba(44,62,80,0.5);
+    padding: 40px;
+    width: 450px;
+    margin: auto;
+    margin-top: 80px;
+    height: 500px;
+    
+    
+}
+.security form{
+    width: 380px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.security form input[type=text]
+{
+    width: 380px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0px;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+    font-variant: small-caps
+}
+
+form h2
+{
+    font-weight: bolder;
+}
+.security form input[type=password]
+{
+    width: 380px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0px;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+    font-variant: small-caps
+}
+
+.security form input[type=email]
+{
+    width: 380px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0px;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+    font-variant: small-caps
+}
+
+.security form input[type=button]
+{
+    border: none;
+    padding: 5px;
+    line-height: 25px;
+    width: 190px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.security form input[type=button]:hover
+{
+    color: aliceblue;
+    background: black;
+}
+
+/* forms */
+
+/*.security{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}*/
+
+::placeholder{
+    color: aliceblue;
+    opacity: .8;
+}
+
+.footer ul {
+    margin-top: 100px;
+    
+    list-style: circle #fff;
+/*    background: #4b0f0f;*/
+    width: 25%;
+    justify-content: center;
+    align-content: center;
+    height: 10vh;
+        
+}
+
+.footer ul{
+    margin: auto;
+    position: relative;
+    display: flex;
+    
+}
+
+.footer ul li{
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    list-style-type: none;
+    padding-right: 230px;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform: rotate(-30deg) skew(25deg);
+    background:#932929;
+}
+
+.footer ul li span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000 !important;
+    transition: 0.5s;
+    display: flex !important;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    font-size: 50px !important;
+    
+}
+
+.footer ul li span:nth-child(3)
+{
+    transform: translate(40px,-40px);
+}
+
+.box , p , h2 {
+    color: aqua;
+    font-size: 29px;
+}

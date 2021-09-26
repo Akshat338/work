@@ -1,0 +1,70 @@
+.container{
+    margin: 120px;
+}
+.tablerow:nth-child(odd)
+{
+    background-color: lightblue;
+}
+#btn{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#userBtn{
+    margin-top:20px; 
+}
+
+
+
+fieldset{
+	width: 60%;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.input1{
+	background-color: white;
+	border: 1px solid lightgrey;
+	width: 400px; height: 40px;
+	border-radius: 8px;
+	font-size: 20px;
+	outline: none;
+}
+
+form{
+	height: 380px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+button{
+	width: 200px;
+	height: 40px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 12px;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#address{
+	background-color: white;
+	height: 40px;
+	width: 405px;
+	border: 1px solid lightgrey;
+	border-radius: 8px;
+	font-size: 16px;
+}
+
+label{
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+option{
+	font-size: 16px;
+}
